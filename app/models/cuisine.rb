@@ -1,3 +1,3 @@
 class Cuisine < ApplicationRecord
-  has_many :recipesroot
+  has_many :recipes
 end
