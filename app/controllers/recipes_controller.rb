@@ -1,4 +1,5 @@
 class RecipesController < ApplicationController
+  before_action :require_user, only: [:show, :edit, :update, :destroy]
   def show
     @recipe = Recipe.find(params[:id])
   end
